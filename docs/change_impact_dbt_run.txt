@@ -1,0 +1,5 @@
+[0m18:25:24  12 of 44 FAIL 4 release_gate_currency_is_cad ................................... [[31mFAIL 4[0m in 0.14s]
+[0m18:25:24  22 of 44 FAIL 1 release_gate_acquired_plans_mapped ............................. [[31mFAIL 1[0m in 0.04s]
+[0m18:25:24  23 of 44 FAIL 5 release_gate_billing_frequency_approved ........................ [[31mFAIL 5[0m in 0.09s]
+[0m18:25:24  Done. PASS=17 WARN=0 ERROR=3 SKIP=24 NO-OP=0 REUSED=0 TOTAL=44
+BUILD OR TESTS FAILED: nothing published. Resolve the failures above first.

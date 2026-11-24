@@ -1,0 +1,2 @@
+[0m18:25:07  Done. PASS=44 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=44
+All tests passed: marts published to published/

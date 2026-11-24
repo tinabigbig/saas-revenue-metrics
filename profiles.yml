@@ -1,0 +1,11 @@
+saas_revenue:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: data/saas.duckdb
+      threads: 4
+    changed:
+      type: duckdb
+      path: data/saas_changed.duckdb
+      threads: 4

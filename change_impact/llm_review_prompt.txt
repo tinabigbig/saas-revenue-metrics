@@ -1,0 +1,64 @@
+You are helping a finance data team review an upstream change.
+Using the change summary and our metric rules in docs/METRIC_DEFINITIONS.md, draft:
+1) the proposed treatment of each new value in ARR, ACV and billings, with reasons,
+2) the SQL change to the named staging or mart model,
+3) the dbt test that would prove the change is right.
+Mark anything you are unsure about as an open question. A person will review before release.
+
+Change summary:
+[
+  {
+    "file": "subscriptions.csv",
+    "staging_model": "stg_subscriptions",
+    "added": [],
+    "removed": [],
+    "new_values": {
+      "product_code": [
+        "CC_COMMIT"
+      ],
+      "billing_frequency": [
+        "quarterly"
+      ],
+      "currency": [
+        "USD"
+      ]
+    },
+    "data_checks": [
+      "3 existing records were edited (history revised), e.g. S1001, S1002, S1003"
+    ],
+    "downstream_models": [
+      "fct_arr_bridge",
+      "fct_arr_monthly",
+      "fct_contract_acv",
+      "fct_nrr",
+      "fct_renewals",
+      "int_line_months",
+      "int_subscription_lines",
+      "int_unclassified_lines",
+      "rpt_billings_vs_arr"
+    ]
+  },
+  {
+    "file": "acq_contracts.csv",
+    "staging_model": "stg_acq_contracts",
+    "added": [],
+    "removed": [],
+    "new_values": {
+      "plan": [
+        "Enterprise"
+      ]
+    },
+    "data_checks": [
+      "Total of `seats` moved more than 2%: 269.00 to 277.00"
+    ],
+    "downstream_models": [
+      "fct_arr_bridge",
+      "fct_arr_monthly",
+      "fct_nrr",
+      "int_line_months",
+      "int_subscription_lines",
+      "int_unclassified_lines",
+      "rpt_billings_vs_arr"
+    ]
+  }
+]

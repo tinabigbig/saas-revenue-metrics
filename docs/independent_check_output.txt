@@ -1,0 +1,9 @@
+PASS  ARR at 2023-12-31: pandas=5,532,390.00  mart=5,532,390.00
+PASS  ARR at 2024-12-31: pandas=9,600,030.00  mart=9,600,030.00
+PASS  ARR at 2025-06-30: pandas=11,918,880.00  mart=11,918,880.00
+PASS  ARR at 2025-12-31: pandas=13,209,540.00  mart=13,209,540.00
+PASS  Net billings, all months: pandas=29,301,348.15  mart=29,301,348.15
+PASS  Distinct invoices: pandas=4,349.00  mart=4,349.00
+PASS  NRR at 2025-12-31 (x1000): pandas=883.68  mart=883.68
+
+7/7 checks pass

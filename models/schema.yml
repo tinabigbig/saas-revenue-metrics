@@ -1,0 +1,28 @@
+version: 2
+models:
+  - name: stg_invoices
+    columns:
+      - name: invoice_id
+        tests: [unique, not_null]
+  - name: int_subscription_lines
+    columns:
+      - name: subscription_id
+        tests: [unique, not_null]
+      - name: net_annual_value
+        tests: [not_null]
+  - name: fct_arr_bridge
+    columns:
+      - name: month_end
+        tests: [unique, not_null]
+  - name: fct_billings_monthly
+    columns:
+      - name: month_end
+        tests: [unique, not_null]
+  - name: fct_contract_acv
+    columns:
+      - name: subscription_id
+        tests: [unique, not_null]
+  - name: fct_renewals
+    columns:
+      - name: subscription_id
+        tests: [unique, not_null]
