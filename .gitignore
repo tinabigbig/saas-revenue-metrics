@@ -1,0 +1,10 @@
+data/*.duckdb
+data/*.duckdb.wal
+data/raw_changed/
+target/
+target_changed/
+published/
+logs/
+dbt_packages/
+__pycache__/
+.user.yml
